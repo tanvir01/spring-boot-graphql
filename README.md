@@ -4,7 +4,7 @@ This repository contains a sample Spring Boot application that demonstrates inte
 
 ## Overview
 
-The application uses simple `Book` and `Genre` Data Transfer Objects (DTOs). On service post-construction, some dummy data is loaded into the application.
+The application uses simple `Book` DTO and `Genre` Enum for demonstration purposes. On service post-construction, some dummy data is loaded into the application.
 
 ## Technologies
 
