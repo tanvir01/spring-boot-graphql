@@ -1,0 +1,27 @@
+type Book {
+    id: ID!
+    title: String!
+    price: Float
+    genre: Genre
+}
+
+enum Genre {
+    HORROR
+    SCIFI
+    FANTASY
+    MYSTERY
+    THRILLER
+    ROMANCE
+    NON_FICTION
+}
+
+type Query {
+    findAll: [Book]
+    findById(id: ID!): Book
+}
+
+type Mutation {
+    createBook(title: String!, price: Float, genre: Genre): Book
+    updateBook(id: ID!, title: String!, price: Float, genre: Genre): Book
+    deleteBook(id: ID!): Book
+}
